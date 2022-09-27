@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" thread-count="1" parallel="tests" name="Failed suite [Appium Tests]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" parallel="tests" name="TimeIt App Tests(failed)">
+    <groups>
+      <run>
+        <include name="smoke"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.timeit.testcases.Smoke">
+        <methods>
+          <include name="TC_0002"/>
+          <include name="TC_0001"/>
+        </methods>
+      </class> <!-- com.timeit.testcases.Smoke -->
+    </classes>
+  </test> <!-- TimeIt App Tests(failed) -->
+</suite> <!-- Failed suite [Appium Tests] -->
